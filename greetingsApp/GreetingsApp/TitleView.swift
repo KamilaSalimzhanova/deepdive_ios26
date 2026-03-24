@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+import TipKit
 
+/// Added angular gradient and state variable
 struct TitleView: View {
     var angle: Angle {
         isRotated ? .zero : Angle(degrees: 360)
@@ -19,14 +21,16 @@ struct TitleView: View {
     }
     let lineWidth = 15.0
     let diameter = 70.0
-    let captions = [
+    let captions: [LocalizedStringKey] = [
         "Exploring iOS Programming",
         "Learning how to bake",
         "Programming Recipes"
     ]
     
     @State private(set) var isRotated: Bool = false
-    @State private(set) var captionText: String = "Exploring iOS Programming"
+    @State private(set) var captionText: LocalizedStringKey = "Exploring iOS Programming"
+    
+    private var greetingsTip = GreetingsTip()
     
     var body: some View {
         HStack {
@@ -39,8 +43,9 @@ struct TitleView: View {
                     .fontWeight(.thin)
             }
             .onTapGesture {
-                captionText = captions.randomElement() ?? ""
+                captionText = captions.randomElement() ?? LocalizedStringKey("Exploring iOS Programming")
             }
+            .popoverTip(greetingsTip)
             Spacer()
             Circle()
                 .strokeBorder(angularGradient, lineWidth: lineWidth)
