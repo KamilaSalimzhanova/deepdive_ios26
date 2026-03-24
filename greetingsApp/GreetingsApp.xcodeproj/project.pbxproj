@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		8EEDCBA12F729DD5004A244D /* GreetingsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreetingsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEDCBBA2F729E81004A244D /* GreetingsApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GreetingsApp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -41,6 +42,13 @@
 			isa = PBXGroup;
 			children = (
 				8EEDCBA12F729DD5004A244D /* GreetingsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EEDCBBC2F729E81004A244D /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +105,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8EEDCBA22F729DD5004A244D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8EEDCBBC2F729E81004A244D /* Products */;
+					ProjectRef = 8EEDCBBA2F729E81004A244D /* GreetingsApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8EEDCBA02F729DD5004A244D /* GreetingsApp */,
