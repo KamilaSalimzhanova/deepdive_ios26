@@ -16,6 +16,10 @@ struct TopicsNavigationView: View {
         TopicModel(
             topicType: .animateFont,
             title: "Animate Font"
+        ),
+        TopicModel(
+            topicType: .grid,
+            title: "Grid"
         )
     ]
     
@@ -43,6 +47,8 @@ struct TopicsNavigationView: View {
             ContentView()
         case .animateFont:
             AnimateFontView()
+        case .grid:
+            GridView()
         }
     }
 }
