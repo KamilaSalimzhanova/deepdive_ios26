@@ -20,6 +20,10 @@ struct TopicsNavigationView: View {
         TopicModel(
             topicType: .grid,
             title: "Grid"
+        ),
+        TopicModel(
+            topicType: .alignmentModifier,
+            title: "Alignment modifier view"
         )
     ]
     
@@ -49,6 +53,8 @@ struct TopicsNavigationView: View {
             AnimateFontView()
         case .grid:
             GridView()
+        case .alignmentModifier:
+            AlignmentModifierView()
         }
     }
 }

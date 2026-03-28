@@ -16,5 +16,6 @@ struct TopicModel: Identifiable {
         case simple
         case animateFont
         case grid
+        case alignmentModifier
     }
 }
