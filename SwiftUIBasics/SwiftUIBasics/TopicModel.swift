@@ -14,5 +14,6 @@ struct TopicModel: Identifiable {
     
     enum TopicType {
         case simple
+        case animateFont
     }
 }

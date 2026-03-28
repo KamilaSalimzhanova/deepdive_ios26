@@ -12,6 +12,10 @@ struct TopicsNavigationView: View {
         TopicModel(
             topicType: .simple,
             title: "Simple text view with rotation effect"
+        ),
+        TopicModel(
+            topicType: .animateFont,
+            title: "Animate Font"
         )
     ]
     
@@ -37,6 +41,8 @@ struct TopicsNavigationView: View {
         switch topic.topicType {
         case .simple:
             ContentView()
+        case .animateFont:
+            AnimateFontView()
         }
     }
 }
