@@ -48,11 +48,14 @@ struct ContentView: View {
                     MoveTransitionView(path: $path)
                         .hidesNavigationBarBackButton()
                 case .slide:
-                    Text("Slide View")
+                    SlideTransitionView(path: $path)
+                        .hidesNavigationBarBackButton()
                 case .asymmetric:
-                    Text("Asymmetric")
+                    AssymetricTransitionView(path: $path)
+                        .hidesNavigationBarBackButton()
                 case .combined:
-                    Text("Combined")
+                    CombinedTransitionView(path: $path)
+                        .hidesNavigationBarBackButton()
                 }
             }
         }
