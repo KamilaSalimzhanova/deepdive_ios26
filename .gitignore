@@ -5,6 +5,9 @@ xcuserdata/
 # Derived data
 DerivedData/
 
+# Secrets
+Secrets.xcconfig
+
 # Build files
 build/
 
