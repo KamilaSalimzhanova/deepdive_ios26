@@ -11,7 +11,27 @@ struct WeatherView: View {
     @State private var vm = WeatherViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                WeatherViewCustomTextfield(text: $vm.city)
+                
+                Button {
+                    //to do
+                } label: {
+                    Label(
+                        "Get Weather",
+                        systemImage: "cloud.sun.fill"
+                    )
+                }
+                .buttonStyle(.borderedProminent)
+                
+                if vm.isLoading {
+                    ProgressView("Fetching weather info")
+                        .padding()
+                }
+            }
+            .padding()
+        }
     }
 }
 
