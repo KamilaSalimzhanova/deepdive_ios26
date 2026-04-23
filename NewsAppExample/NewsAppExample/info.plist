@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Property List.plist
+   NewsAppExample
+
+   Created by kamila on 23.04.2026.
+   Copyright (c) 2026 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+    <key>API_KEY</key>
+    <string>$(API_KEY)</string>
+</dict>
+</plist>
