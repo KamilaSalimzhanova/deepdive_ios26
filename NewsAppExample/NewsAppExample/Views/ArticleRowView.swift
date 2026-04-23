@@ -50,7 +50,7 @@ struct ArticleRowView: View {
                     .foregroundColor(.secondary)
                     .lineLimit(2)
                 
-                Text(data.publishedAt)
+                Text(data.publishedAt.toFormattedDate())
                     .font(.caption)
                     .foregroundStyle(.tertiary)
             }
