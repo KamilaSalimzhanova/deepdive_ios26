@@ -17,13 +17,6 @@ struct StartupView: View {
                 Text("Chi")
                     .font(.system(size: 80, weight: .bold))
                     .padding()
-                    .background(
-                        LinearGradient(
-                            colors: [.indigo, .purple],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        ).opacity(0.4)
-                    )
                     .clipShape(Circle())
                     .foregroundStyle(.white)
                     .shadow(radius: 5)
