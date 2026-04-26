@@ -12,4 +12,6 @@ struct Options: Identifiable, Equatable {
     let number: Int
     let chinese: String
     let pinyin: String
+    
+    static let defaultOption: Options = .init(number: 1, chinese: "一", pinyin: "yī")
 }

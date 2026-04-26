@@ -44,8 +44,8 @@ final class SpeechManager {
     }
 }
 
-private extension SpeechManager {
-    private enum Language: String {
+extension SpeechManager {
+    enum Language: String {
         case chinese = "zh-CH"
         case english = "en-US"
     }
